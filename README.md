@@ -40,31 +40,10 @@
 1. 确保MySQL服务正在运行
 2. 数据库连接信息已在 `application.properties` 中配置：
    ```properties
-   spring.datasource.url=jdbc:mysql://117.72.215.67:13306/bbs_forum
-   spring.datasource.username=root
-   spring.datasource.password=S2pAR8m3MmX54iFL
+   spring.datasource.url=
+   spring.datasource.username=
+   spring.datasource.password=
    ```
-
-### 启动项目
-
-1. 克隆项目到本地
-2. 进入项目根目录
-3. 运行以下命令：
-
-```bash
-# 安装依赖
-mvn clean install
-
-# 启动项目
-mvn spring-boot:run
-```
-
-或者在IDE中直接运行 `BbsRdApplication.java`
-
-### 访问项目
-
-- 项目启动后访问: http://localhost:8080
-- API文档地址: http://localhost:8080/swagger-ui.html
 
 ## API接口
 
@@ -144,33 +123,3 @@ Authorization: Bearer <your-jwt-token>
 - 每日签到+10积分
 - 帖子加精+100积分
 - 发布求助帖需要消耗积分
-
-## 测试
-
-运行测试：
-
-```bash
-mvn test
-```
-
-## 部署
-
-### 打包
-
-```bash
-mvn clean package
-```
-
-### 运行jar包
-
-```bash
-java -jar target/bbs-RD-0.0.1-SNAPSHOT.jar
-```
-
-## 贡献
-
-欢迎提交Issue和Pull Request来改进项目。
-
-## 许可证
-
-本项目采用MIT许可证。
